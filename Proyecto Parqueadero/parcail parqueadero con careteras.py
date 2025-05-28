@@ -1,7 +1,6 @@
 import time
 
 def crear_mapa():
-    # Mapa 8x8 con vías ('#'), espacios de parqueo ('E'), entrada (I) y salida (S)
     mapa = [
         ['I','#','E','E','E','E','E','E'],
         ['#','#','#','#','#','#','#','#'],
