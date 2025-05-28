@@ -4,7 +4,9 @@ En este proyecto se trabajaron cuatro innoaviones principales
 la primera de ellas es incluir la tabla de tipos, esto para poder dar realismo al tipo de batalla pokemon ya que en la realidad se usan disitntas efectividades segun de que tipo sea el ataque y de que toipo sea el pokemon que reciba el ataque, esto se considera necesario ya que permite tener un mayor analisis en cuanto a los ataque que va a alanzar el jugador ademas de tener mas afinidad a la realidad del juego. Esta implementacion se llevo a cabo por medio de funciones if en las cuales el retorno es un multiplicador de daño el cual afecte segun el tipo del pokemon, como se muestra en el siguiente ejemplo:
 
 if (attackType == FIRE) {
+
 if (defenseType == GRASS || defenseType == STEEL) return 2.0;
+
 if (defenseType == WATER || defenseType == FIRE || defenseType == DRAGON) return 0.5;
 
 Otra innovacion incluida en este proyecto es la inclucion de los tipos pokemon los cuales son asignados a los pokemon incluidos en las elecciones para poder tener la efectividad de la tabla de tipos, ademas de esta innovacion tambien se incluyeron 6 pokemones ( Umbreon, Garchomb, Rayquaza, Metagross, Sceptile y Charizard) cada uno de ellos con ataques diferentes los cuales en funcion de la tabla de tipos hacen mas daño o menos daño, esto dependiendo de la clasificacion de tres tipos, eficas donde el multiplicador es por 1.0, en el caso de que sea poco eficas se multiplicara el daño base del ataque por 0.5 y si es supereficaz se multiplica por 2.0, en cuanto a la batalla se muestra una batalla con cambios en cuanlquier momento al pokemon que este en batalla por el segundo pokemon del equipo, estos dos pokemones se eligen al principio de la battalla con un menu interactivo. El daño a medida que la batalla va pasando se muestra despues de cada ataque por lo cual se tiene la informacion de la batalla demas de cuanto daño hace cada uno de los pokemones.
